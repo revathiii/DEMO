@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {
+                margin: 0 auto;
+                background-color: linear-gradient(to bottom, #33ccff -15%, #ff99cc 92%);
+/*                background-image: url('bgm.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;*/
+            }
+           
+            div {
+                height: 900px;
+                width: 400px;
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                margin-top: -150px;
+                margin-left: -200px;
+                border-radius: 30px;
+                opacity: 0.6;
+            }
+           
+            #in {
+                color: white;
+                background: transparent;
+                border-radius: 12px;
+                border-color: lightskyblue;
+                height: 30px;
+                width: 200px;
+                align-items: center;
+            }
+           
+            #form {
+                padding: 30px;
+                border-radius: 300px;
+                background: transparent;
+            }
+           
+            input[type="text"] {
+                text-align: center;
+            }
+           
+            input[type="password"] {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+        <center style="background-color: black">
+            <form method="post" id="form" action='/kamales/main'>
+                <h1 style="font-family: sans-serif, cursive, monospace; color: white">Login</h1>
+                <p style="color: white">Please enter your login and password!</p>
+                <input type ='text' name="name" placeholder="Username" id="in" />
+                <br><br>
+                <input type ='password' name="pass" placeholder="Password" id="in" />
+                <br><br>
+                <button type="submit" value="login" style="border-radius: 12px; border-color: green ; background: transparent; color: white; width: 150px; height: 29px"><a href="about.html">Login</a></button>
+            </form>
+        </center>
+            </div>
+    </body>
+</html>
